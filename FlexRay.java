@@ -1,4 +1,3 @@
-package com.pantheon.PantheonEngine.moulder;
 
 public class FlexRay {
     //Capacity Logic Caps
@@ -31,7 +30,6 @@ public class FlexRay {
 
         getDataAdjustSizes();
     }
-
 
     public void addData(float[] val){
         //Create a local Reference
