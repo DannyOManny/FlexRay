@@ -45,7 +45,6 @@ public class FlexRay {
             dsSetFloat[i][tempSet][tempLoc] = val[i];
         }
 
-        System.out.println("Added : "+tempSet+" | "+tempLoc + " | Count: "+dataCount);
         dataCount++;
         adjustSet();
     }
@@ -93,7 +92,6 @@ public class FlexRay {
         
         final int S_dataCount = dataCount;
 
-        System.out.println("Retrieved : Count: "+dataCount);
         if(refID>S_dataCount || refID < 0 || refID>=S_dataCount)return dataValues;
 
         int alocSET = 0;
@@ -109,7 +107,7 @@ public class FlexRay {
         for(int i = 0 ; i < columns ; i++){
             dataValues[i] = dsSetFloat[i][alocSET][alocDATA];
         }
-        System.out.println("Retrieved : "+alocSET+" | "+alocDATA + " | Count: "+dataCount);
+
         return dataValues;
     }
 
@@ -130,7 +128,6 @@ public class FlexRay {
         setSizes[loopCount+1] = dataCount;
 
         getDataSize = setSizes;
-        //for(int i = 0 ; i<64 ; i++){ System.out.println("Size : "+i + " | " +getDataSize[i]); } //TESTER
     }
 
 
